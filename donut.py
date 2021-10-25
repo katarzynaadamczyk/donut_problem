@@ -1,10 +1,4 @@
-class Donut:
+from decouple import config 
 
-    def __init__(self, weight, kcal, name):
-        self.weight = weight
-        self.kcal = kcal
-        self.name = name
-        self.kcalper1g = kcal / weight
-
-    def print_donut(self):
-        print(f'{self.name}: {self.weight} g, {self.kcal} kcal')
+# TODO
+# class to connect and to import data from donuts database
