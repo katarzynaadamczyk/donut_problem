@@ -1,4 +1,4 @@
-from donut import Donut
+# from donut import Donut
 
 from decouple import config
 import mysql.connector
@@ -19,9 +19,7 @@ def main():
 
     cursor.execute("SELECT * FROM donuts")
     portfolio = cursor.fetchall()
-    
-    chocolate_donut = Donut(weight=90, kcal=352, name='Chocolate donut')
-    vanilla_donut = Donut(weight=80, kcal=250, name='Vanilla donut')
+   
     print('Available donuts: ')
     print(portfolio)
 
